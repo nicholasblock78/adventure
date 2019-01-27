@@ -1,24 +1,15 @@
-# README
+# 20's Adventures
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A blog by twenty somethings for twenty somethings.
 
-Things you may want to cover:
+Things we'll cover:
 
-* Ruby version
+* Food
 
-* System dependencies
+* Health
 
-* Configuration
+* Finance
 
-* Database creation
+* Travel
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Inspiration
