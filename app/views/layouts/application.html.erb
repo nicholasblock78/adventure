@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Adventure</title>
+    <title>20's Adventures</title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -15,9 +16,8 @@
       <input type="text" placeholder="Search.." id="search-bar" />
       <%= image_tag 'mag-glasses.svg', height: '50px', alt: '', id: 'mag-glasses' %>
     </div>
-    <div>
+    <div id='top-right-menu'>
         <ul>
-	  			<li><%= link_to "Home", root_path %></li>
 	  			<% if current_user %>
             <li><%= link_to "My Profile", user_path(id: session[:user_id]) %></li>
 		  			<li><%= link_to "Log Out", sessions_destroy_path, method: 'delete' %></li>
@@ -25,6 +25,7 @@
 		  			<li><%= link_to "Register", new_user_path %></li>
 		  			<li><%= link_to "Log In", sessions_new_path %></li>
 	  			<% end %>
+          <li><a href="/"><%= image_tag 'home-logo.svg', height: '40px', alt: 'Home', id: 'home-logo' %></a></li>
 	  		</ul>
       </div>
     <nav>  
