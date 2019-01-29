@@ -9,9 +9,25 @@
   </head>
 
   <body>
-    <nav>
-      <%= image_tag 'logo.svg', height: '90px', alt: '20\'s Adventures Logo', id: 'main-logo' %>
+    <div id='top-nav'>
+    </div>
+    <input type="text" placeholder="Search.." id="main-search" />
+    <nav>  
+      <div id='logo'>
+        <%= image_tag 'logo.svg', height: '125px', alt: '20\'s Adventures Logo', id: 'main-logo' %>
+      </div>
+      <div>
+        <ul id="menu">
+          <li>Food</li>
+          <li>Health</li>
+          <li>Finance</li>
+          <li>Travel</li>
+          <li>Inspiration</li>
+        </ul>
+      </div>
     </nav>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
