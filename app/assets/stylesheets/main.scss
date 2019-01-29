@@ -22,14 +22,24 @@ body {
 
     
 }
-input#main-search {
+div#main-search {
     margin-left: 35%;
     margin-top: 1.75%;
-    width: 300px;
-    border-radius: 25px;
-    height: 25px;
-    padding: 5px;
     position: fixed;
+
+    #search-bar {
+        width: 300px;
+        border-radius: 25px;
+        height: 25px;
+        padding: 5px;
+    }
+}
+
+#mag-glasses {
+    height: 25px;
+    position: absolute;
+    top: 15%;
+    left: 85%;
 }
 
 nav {
