@@ -90,11 +90,13 @@ nav {
             font-size: 2em;
             padding-top: 25px;
             text-align: center;
+            text-decoration: none;
             margin: 5px 0;
             width: 80%;
+            color: black;
         }
 
-        li:hover {
+        a:hover {
             background-color:#008f95;
         }
     }
@@ -111,6 +113,9 @@ main {
 }
 
 footer {
+    display: flex;
+    padding-left: 5%;
+    justify-content: center;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -123,5 +128,15 @@ footer {
 
     div {
         color: black;
+        width: 400px;
+        margin-top: 1%;
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    .social-icons {
+        display: flex;
     }
 }
