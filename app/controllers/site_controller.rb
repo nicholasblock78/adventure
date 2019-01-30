@@ -3,6 +3,9 @@ class SiteController < ApplicationController
         @posts = Post.all
     end
 
+    def contact
+    end
+
     def food
         @posts = Post.where(category_id: 1)
     end

@@ -122,10 +122,8 @@ main {
 
 footer {
     clear: both;
-    position:absolute;
-   bottom:0;
+    position: relative;
     display: flex;
-    padding-left: 5%;
     justify-content: center;
     // position: absolute;
     left: 0;
@@ -153,16 +151,28 @@ footer {
 }
 
 .post-main-img {
-    height: 200px;
+    width: 400px;
 }
 
 ul.posts {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     list-style-type: none;
+    margin: 0 auto;
+    padding-top: 40px;
 
     p {
         width: 350px;
+    }
+    h4 {
+        font-size: 2em;
+    }
+
+    li {
+        width: 500px;
+        margin: 20px;
+        background-color: goldenrod;
     }
 }

@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/travel' => 'site#travel'
   get '/inspiration' => 'site#inspiration'
   get '/local' => 'site#local'
+  get '/contact' => 'site#contact'
 
   root 'site#index'
 end
