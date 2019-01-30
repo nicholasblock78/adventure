@@ -3,6 +3,7 @@ class SiteController < ApplicationController
     end
 
     def food
+        @posts = Post.where(category_id: 1)
     end
 
     def health

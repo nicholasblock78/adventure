@@ -10,6 +10,7 @@ $dark-background-color: #f5deb3;
 
 body {
     background-color: $background-color;
+    min-height:100%;
 }
 
 #top-nav {
@@ -65,6 +66,7 @@ div#main-search {
 nav {
     background-color: $dark-background-color;
     height: 100vh;
+    display: inline-block;
     margin: 0 0 0 5%;
     width: 300px;
 
@@ -106,17 +108,26 @@ main {
     background-color: rgba(255,255,240,0.5);
     border-radius: 5px;
     padding: 10px;
-    position: fixed;
+    position: absolute;
+    display: inline-block;
+    // margin-left: 30%;
     top: 20%;
     left: 25%;
+    height: auto;
+    min-height: 1000px;
+    // overflow: hidden;
     width: 50%;
+    z-index: -1;
 }
 
 footer {
+    clear: both;
+    position:absolute;
+   bottom:0;
     display: flex;
     padding-left: 5%;
     justify-content: center;
-    position: absolute;
+    // position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -138,5 +149,19 @@ footer {
 
     .social-icons {
         display: flex;
+    }
+}
+
+.post-main-img {
+    height: 200px;
+}
+
+ul.posts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    p {
+        width: 350px;
     }
 }

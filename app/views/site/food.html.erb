@@ -1,0 +1,12 @@
+<ul class="posts">
+<% @posts.each do |p| %>
+    <li>
+        
+        <b><%= p.title %></b>
+        <br>
+        <image class="post-main-img" src="<%= p.main_img %>"/>
+        <br>
+        <p><%= p.preview[0..99] %>...</p>
+    </li>
+<% end %>
+</ul>
