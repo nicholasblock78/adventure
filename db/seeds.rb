@@ -60,3 +60,22 @@ Post.create({
     preview: "I downloaded Robinhood and tried investing in stocks through the app.",
     body: ""
 })
+
+Post.create({
+    title: "Punta Cana",
+    main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1548829431/IMG_0364_toxddt.jpg",
+    category_id: 4,
+    user_id: 1,
+    preview: "I recently visited the Dominican Republic. This was my first time experiencing an all-inclusive resort.",
+    body: ""
+})
+
+
+Post.create({
+    title: "Boston",
+    main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1548829794/IMG_1449_fll8lm.jpg",
+    category_id: 4,
+    user_id: 1,
+    preview: "In summer 2018, I visited Boston for a weekend in June for a TD Ameritrade investor's educational seminar. Outside of the my time there, I was able to amply explore and experience Boston.",
+    body: ""
+})
