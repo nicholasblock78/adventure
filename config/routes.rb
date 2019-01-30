@@ -9,5 +9,12 @@ Rails.application.routes.draw do
   resources 'users' do 
   end
 
+  get '/food' => 'site#food'
+  get '/health' => 'site#health'
+  get '/finance' => 'site#finance'
+  get '/travel' => 'site#travel'
+  get '/inspiration' => 'site#inspiration'
+  get '/local' => 'site#local'
+
   root 'site#index'
 end
