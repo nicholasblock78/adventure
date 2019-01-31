@@ -64,7 +64,7 @@ div#main-search {
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     background-color: $dark-background-color;
     height: 100vh;
     display: inline-block;
@@ -113,7 +113,7 @@ main {
     margin-left: 25%;
     margin-top: 7%;    
     height: auto;
-    min-height: 1500px;
+    min-height: 1000px;
     width: 55%;
     z-index:-2;
 }
