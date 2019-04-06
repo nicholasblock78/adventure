@@ -2,3 +2,48 @@
 <div id="app">
   {{ message }}
 </div>
+
+<div id="slideshow" style="background-color: lightgrey;">
+  <svg onclick="imgLeft()" id='left-arr' width="100" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+    <path fill="#010101" d="M0,256L512,0L384,256l128,256L0,256z"/>
+  </svg>
+  <img name="slideshow" width="400" src=""/>
+  <svg onclick="imgRight()" id='right-arr' width="100" transform="rotate(180)" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+    <path fill="#010101" d="M0,256L512,0L384,256l128,256L0,256z"/>
+  </svg>
+  
+</div>
+
+
+
+<script>
+    var i = 0;
+    var images = [];
+    var time = 1000;
+
+    images[0] = "https://res.cloudinary.com/blockscloud/image/upload/v1502336122/105_4439_gjrvnd.jpg";
+    images[1] = "https://res.cloudinary.com/blockscloud/image/upload/v1502336130/105_4550_q90rgr.jpg";
+    images[2] = "https://res.cloudinary.com/blockscloud/image/upload/v1485126113/IMG_0902_qhxbux.jpg";
+    images[3] = "https://res.cloudinary.com/blockscloud/image/upload/v1485126112/IMG_0069_eacmoe.png";
+
+    function imgLeft() {
+      if (i!=0) {
+        i = i - 1
+      }
+      
+      document.slideshow.src = images[i];
+    }
+    function imgRight() {
+      if ( i < images.length-1 ) {
+        i = i + 1
+      }
+      document.slideshow.src = images[i];
+    }
+   
+
+    window.onload =  document.slideshow.src = images[0];
+
+</script>
+
