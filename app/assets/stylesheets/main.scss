@@ -146,6 +146,10 @@ footer {
 
 .post-main-img {
     width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-left:25px;
+    /* object-position: 5% 5%; */
 }
 
 ul.posts {
