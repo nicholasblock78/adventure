@@ -18,6 +18,7 @@ Category.create(title: 'Local')
 
 Post.create({
     title: "Intro to Urban Gardening",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1485126114/IMG_0074_mxsnxc.png",
     category_id: 1,
     user_id: 1,
@@ -27,6 +28,7 @@ Post.create({
 
 Post.create({
     title: "Asian Meatball Recipe",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1485125934/IMG_0087_oefkty.jpg",
     category_id: 1,
     user_id: 1,
@@ -36,6 +38,7 @@ Post.create({
 
 Post.create({
     title: "Count Those Calories",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1548825613/calories_d9d6gn.png",
     category_id: 2,
     user_id: 1,
@@ -54,6 +57,7 @@ Post.create({
 
 Post.create({
     title: "Robinhood Review",
+    sub_title: "",
     main_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzB2-c_S0qDc7IO0FketUtCaq6C4WDPQ7ekl_ri4-GPmDJSTu",
     category_id: 3,
     user_id: 1,
@@ -63,6 +67,7 @@ Post.create({
 
 Post.create({
     title: "Personal Taxes Broken Down",
+    sub_title: "",
     main_img: "",
     category_id: 3,
     user_id: 1,
@@ -72,6 +77,7 @@ Post.create({
 
 Post.create({
     title: "Punta Cana",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1548829431/IMG_0364_toxddt.jpg",
     category_id: 4,
     user_id: 1,
@@ -82,6 +88,7 @@ Post.create({
 
 Post.create({
     title: "Boston",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1548829794/IMG_1449_fll8lm.jpg",
     category_id: 4,
     user_id: 1,
@@ -91,6 +98,7 @@ Post.create({
 
 Post.create({
     title: "Amsterdam",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1554558963/DSC_0060h_rdmj4x.jpg",
     category_id: 4,
     user_id: 1,
@@ -100,6 +108,7 @@ Post.create({
 
 Post.create({
     title: "Zermatt",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1554558646/IMG_1010_fii3xb.jpg",
     category_id: 4,
     user_id: 1,
@@ -109,6 +118,7 @@ Post.create({
 
 Post.create({
     title: "Barcelona",
+    sub_title: "",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1554558917/DSC_0989h_typigt.jpg",
     category_id: 4,
     user_id: 1,
@@ -118,6 +128,7 @@ Post.create({
 
 Post.create({
     title: "5 Common Mistakes Most Home Chefs Make That You Can Fix Right Now",
+    sub_title: "",
     main_img: "https://i.ytimg.com/vi/AFwkGTEles8/maxresdefault.jpg",
     category_id: 2,
     user_id: 1,
