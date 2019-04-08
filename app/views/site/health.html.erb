@@ -2,9 +2,8 @@
 <% @posts.each do |p| %>
     <li>
         <h4><%= link_to "#{p.title}", category_post_path(category_id: 3, id: p.id) %></h4>
-        <h4><%= p.title %></h4>
         <br>
-        <image class="post-main-img" src="<%= p.main_img %>"/>
+        <img class="post-main-img" src="<%= p.main_img %>"/>
         <br>
         <p><%= p.preview[0..99] %>...</p>
     </li>

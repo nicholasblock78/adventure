@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     
   end
   resources 'categories' do
-    resources 'posts'
+  resources 'posts'
   end
 
   get '/food' => 'site#food'
@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get '/travel' => 'site#travel'
   get '/inspiration' => 'site#inspiration'
   get '/local' => 'site#local'
+  get '/shop' => 'site#shop'
   get '/dating' => 'site#dating'
   get '/contact' => 'site#contact'
 
