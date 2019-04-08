@@ -6,7 +6,12 @@ Rails.application.routes.draw do
   delete 'sessions/destroy'
   post 'users/update' => 'users#update'
 
+ 
   resources 'users' do 
+    
+  end
+  resources 'categories' do
+    resources 'posts'
   end
 
   get '/food' => 'site#food'

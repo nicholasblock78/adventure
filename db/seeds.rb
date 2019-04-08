@@ -14,6 +14,7 @@ Category.create(title: 'Finance')
 Category.create(title: 'Travel')
 Category.create(title: 'Inspiration')
 Category.create(title: 'Local')
+Category.create(title: 'Dating')
 
 
 Post.create({
@@ -77,7 +78,7 @@ Post.create({
 
 Post.create({
     title: "Punta Cana",
-    sub_title: "",
+    sub_title: "Dominican Republic (Caribbean)",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1548829431/IMG_0364_toxddt.jpg",
     category_id: 4,
     user_id: 1,
@@ -88,7 +89,7 @@ Post.create({
 
 Post.create({
     title: "Boston",
-    sub_title: "",
+    sub_title: "Massachusetts (USA)",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1548829794/IMG_1449_fll8lm.jpg",
     category_id: 4,
     user_id: 1,
@@ -98,7 +99,7 @@ Post.create({
 
 Post.create({
     title: "Amsterdam",
-    sub_title: "",
+    sub_title: "Netherlands (Europe)",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1554558963/DSC_0060h_rdmj4x.jpg",
     category_id: 4,
     user_id: 1,
@@ -108,7 +109,7 @@ Post.create({
 
 Post.create({
     title: "Zermatt",
-    sub_title: "",
+    sub_title: "Switzerland (Europe)",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1554558646/IMG_1010_fii3xb.jpg",
     category_id: 4,
     user_id: 1,
@@ -118,7 +119,7 @@ Post.create({
 
 Post.create({
     title: "Barcelona",
-    sub_title: "",
+    sub_title: "Spain (Europe)",
     main_img: "https://res.cloudinary.com/blockscloud/image/upload/v1554558917/DSC_0989h_typigt.jpg",
     category_id: 4,
     user_id: 1,
