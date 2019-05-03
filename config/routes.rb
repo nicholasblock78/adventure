@@ -29,4 +29,9 @@ Rails.application.routes.draw do
   end
 
   root 'site#index'
+
+  get '*path', to: 'site#index'
+  # match "*missing" do
+  #    get 'site#index'
+  # end
 end

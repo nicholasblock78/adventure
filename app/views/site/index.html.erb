@@ -1,11 +1,14 @@
-<ul class="posts">
-<% @posts.each do |p| %>
-    <li>
-        <h4><%= p.title %></h4>
-        <br>
-        <img class="post-main-img" src="<%= p.main_img %>"/>
-        <br>
-        <p><%= p.preview[0..99] %>...</p>
-    </li>
-<% end %>
-</ul>
+<div>
+    <h3>Most Recent Posts</h3>
+    <ul class="posts">
+    <% @posts.each do |p| %>
+        <li>
+            <h4><%= p.title %></h4>
+            <br>
+            <img class="post-main-img" src="<%= p.main_img %>"/>
+            <br>
+            <p><%= p.preview[0..99] %>...</p>
+        </li>
+    <% end %>
+    </ul>
+</div>
