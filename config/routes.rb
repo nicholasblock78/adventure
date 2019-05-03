@@ -24,5 +24,9 @@ Rails.application.routes.draw do
   get '/dating' => 'site#dating'
   get '/contact' => 'site#contact'
 
+  scope '/shop' do
+    resources :products
+  end
+
   root 'site#index'
 end

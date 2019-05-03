@@ -1,11 +1,15 @@
-<ul class="posts">
-<% @posts.each do |p| %>
-    <li>
-        <h4><%= p.title %></h4>
-        <br>
-        <img class="post-main-img" src="<%= p.main_img %>"/>
-        <br>
-        <p><%= p.preview[0..99] %>...</p>
-    </li>
-<% end %>
-</ul>
+<div class="travel">
+    <img class='main-travel-img' src="https://res.cloudinary.com/blockscloud/image/upload/v1555630310/Europe/DSC_0284_final.jpg" width="600" />
+    <p id="travel-headline">Travel</p>
+    </div>
+    <ul class="posts">
+    <% @posts.each do |p| %>
+        <li>
+            <h4><%= p.title %></h4>
+            <br>
+            <img class="post-main-img" src="<%= p.main_img %>"/>
+            <br>
+            <p><%= p.preview[0..99] %>...</p>
+        </li>
+    <% end %>
+    </ul>

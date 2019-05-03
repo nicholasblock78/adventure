@@ -4,3 +4,7 @@
 2019-04-02 20:13:47.951 CDT [45208] LOG:  database system was shut down at 2019-04-02 20:13:41 CDT
 2019-04-02 20:13:47.955 CDT [45207] LOG:  database system is ready to accept connections
 2019-04-06 09:42:35.740 CDT [87642] FATAL:  database "nicholasblock_com_development" does not exist
+2019-04-14 23:26:15.713 CDT [45207] LOG:  received smart shutdown request
+2019-04-14 23:26:15.715 CDT [45207] LOG:  background worker "logical replication launcher" (PID 45214) exited with exit code 1
+2019-04-14 23:26:15.716 CDT [45209] LOG:  shutting down
+2019-04-14 23:26:15.732 CDT [45207] LOG:  database system is shut down

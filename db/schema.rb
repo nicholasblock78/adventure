@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190129205753) do
+ActiveRecord::Schema.define(version: 20190503195734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "activities", force: :cascade do |t|
+    t.string "title"
+    t.string "category_id"
+    t.string "duration"
+    t.string "weather"
+    t.string "romantic_lvl"
+    t.string "activity_lvl"
+    t.string "price_lvl"
+    t.string "location"
+    t.string "time_avail"
+    t.string "time_not_avail"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
@@ -28,11 +43,28 @@ ActiveRecord::Schema.define(version: 20190129205753) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
+    t.string "sub_title"
     t.string "main_img"
     t.string "preview"
     t.text "body"
     t.integer "category_id"
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "title"
+    t.string "amazon"
+    t.string "body"
+    t.string "rating"
+    t.string "category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
