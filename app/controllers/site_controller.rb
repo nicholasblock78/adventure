@@ -11,6 +11,7 @@ class SiteController < ApplicationController
     end
 
     def health
+        @category = Category.where(category_id: 2)
         @posts = Post.where(category_id: 2)
     end
 
@@ -19,6 +20,7 @@ class SiteController < ApplicationController
     end
 
     def travel
+        @category = Category.where(category_id: 4)
         @posts = Post.where(category_id: 4)
     end
 
