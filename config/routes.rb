@@ -11,9 +11,10 @@ Rails.application.routes.draw do
     
   end
   resources 'categories' do
-  resources 'posts'
+    resources 'posts'
   end
 
+  get '/about' => 'site#about'
   get '/food' => 'site#food'
   get '/health' => 'site#health'
   get '/finance' => 'site#finance'
@@ -30,8 +31,5 @@ Rails.application.routes.draw do
 
   root 'site#index'
 
-  get '*path', to: 'site#index'
-  # match "*missing" do
-  #    get 'site#index'
-  # end
+  get '*path', to: 'site#not_found'
 end
