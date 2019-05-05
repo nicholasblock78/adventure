@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get '/local' => 'site#local'
   get '/shop' => 'site#shop'
   get '/dating' => 'site#dating'
+  get '/dating/planner' => 'site#planner'
   get '/contact' => 'site#contact'
 
   scope '/shop' do

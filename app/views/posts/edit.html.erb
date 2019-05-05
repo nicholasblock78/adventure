@@ -1,13 +1,17 @@
 <h3>Editing..</h3>
-
-<h1>Edit article</h1>
  
 <%= form_tag category_post_path(@post), method: "put" do %>
   <label>Post title:</label><br>
-  <%= text_field_tag :title, @post.title %><br>
+  <%= text_field_tag :title, @post.title, style: "width:500px;" %><br>
+
+  <label>Post subtitle:</label><br>
+  <%= text_field_tag :sub_title, @post.sub_title, style: "width:500px;" %><br>
+
+  <label>Main image link:</label><br>
+  <%= text_field_tag :main_img, @post.main_img, style: "width:500px;" %><br>
 
   <label>Post description</label><br>
-  <%= text_area_tag :body, @post.body %><br>
+  <%= text_area_tag :body, @post.body, style: "width:600px; height: 350px;" %><br>
 
   <%= submit_tag "Submit Post" %>
 <% end %>

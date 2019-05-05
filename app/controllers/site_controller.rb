@@ -31,4 +31,8 @@ class SiteController < ApplicationController
     def local
         @posts = Post.where(category_id: 6)
     end
+
+    def planner
+        render 'dating/planner'
+    end
 end
