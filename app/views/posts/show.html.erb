@@ -1,5 +1,7 @@
 <%= link_to "edit", edit_category_post_path %>
-<h2><%= @post.title %></h2>
-<% if @post.body %>
-    <p><%= @post.body.html_safe %></p>
-<% end %>
+<div style="width: 650px;text-align: justify; text-justify: inter-word;">
+    <h2><%= @post.title %></h2>
+    <% if @post.body %>
+        <p style=""><%= @post.body.html_safe %></p>
+    <% end %>
+</div>
