@@ -1,2 +1,5 @@
+<%= link_to "edit", edit_category_post_path %>
 <h2><%= @post.title %></h2>
-<p><%= @post.body.html_safe %></p>
+<% if @post.body %>
+    <p><%= @post.body.html_safe %></p>
+<% end %>

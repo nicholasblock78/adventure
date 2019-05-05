@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   resources 'users' do 
     
   end
+
+  patch 'categories/:category_id/posts/:id', to: 'posts#update'
   resources 'categories' do
     resources 'posts'
   end

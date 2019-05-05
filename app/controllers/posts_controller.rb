@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 	def update
 		@post = Post.find(params[:id])
 		@post.update(title: params[:title], sub_title: params[:sub_title], body: params[:body])
-		redirect_to post_path(@post)
+		redirect_to category_post_path(@post.id)
 	end
 
 	def create
